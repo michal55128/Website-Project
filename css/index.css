@@ -1,0 +1,135 @@
+﻿body {
+    direction:rtl;
+    box-sizing:border-box;
+}
+nav p {
+    font-size: 20px;
+    text-decoration: none;
+    margin: 12px;
+    color: #504545;
+    font-family: '';
+}
+
+header {
+    display: flex;
+    justify-content: center
+}
+/* מיקום וצורת פריסת התפריט*/
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #c9d6da;
+    height: 50px;
+    align-items: center;
+    z-index: -1;
+    /*position: sticky;*/
+    /*top: 0;*/
+}
+
+header img {
+    width: 258px;
+    height: 187px;
+}
+/*תפריט פנימי הנפתח כשעוברים על התפריט החיצוני*/
+.dropdown-content1, .dropdown-content2, .dropdown-content3, .dropdown-content4 {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: #eee3da;
+}
+
+    .dropdown-content1 a, .dropdown-content2 a, .dropdown-content3 a, .dropdown-content4 a {
+        color: black;
+        padding: 8px 1px;
+        text-decoration: none;
+        display: block;
+    }
+
+
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+
+.dropdown3:hover .dropdown-content3 {
+    display: block;
+}
+
+.dropdown4:hover .dropdown-content4 {
+    display: block;
+}
+
+iframe {
+    width: 100%;
+    height: 56VH;
+    border: none;
+}
+
+
+a{
+    text-decoration:none;
+    color:black;
+    font-size:18px;
+    padding:7px;
+}
+
+.Vertical-line{display:inline;}
+/*הקטנת הכתב בתפריט ותמונת לוגו במסכים הקטנים מ790 */
+@media screen and (max-width: 790px) {
+    nav p {
+font-size:15px;
+margin:2px;
+    }
+    
+    input{width:50px;}
+    header img{
+        width:130px;
+        height:100px;
+    }
+}
+    img {
+        border: 0 none;
+        text-decoration: none;
+        width: 25px;
+        height: 25px;
+    }
+    /*חיפוש*/
+    input {
+        border-color: dimgray;
+        padding: 0.5em;
+        margin: 0.5em;
+        border-radius: 20px;
+        border-block-color: #f2e2d2;  
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+    }
+    .div {
+        display: flex;
+        justify-content: center;
+        background-color: #c9d6da;
+        height: 50px;
+        align-items: center;
+        z-index: -1
+    }
+    .icon {
+        text-decoration: none;
+        width: 30px;
+        height: 30px;
+    }
+    iframe{height:70vh;}
+   /*הקטנת גודל תמונת הלוגו במסכים שגובהם קטן מ570*/
+@media screen and (max-height: 570px){
+    header img{
+        width:100px;
+        height:70px;
+    }
+}

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="../css/giftcardstyle.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body class="flex">
+
+    <div class="details">
+        <form action="../pages/actionpage.html">
+            <label for="mail">סכום:</label>
+            <input type="number" name="sumOfCard" min="50" required />
+            <label for="mail">שם שולח הכרטיס:</label>
+            <input type="text" name="nameofsender" required />
+            <label for="mail">מייל:</label>
+            <input type="email" name="mail">
+            <label for="mail">שם מקבל הכרטיס:</label>
+            <input type="text" name="nameof" required />
+            <label for="text">הקדשה אישית</label>
+            <textarea wrap="hard" rows="10" cols="30" name="text"></textarea>
+            <input type="submit" value="הוספה לסל" id="submit">
+        </form>
+    </div>
+    <div class="image">
+        <img src="../pictures/Various/img-gift.jpg" />
+    </div>
+</body>
+</html>

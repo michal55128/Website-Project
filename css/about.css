@@ -1,0 +1,23 @@
+﻿body { 
+    direction: rtl;
+    font-family: inherit;
+}
+.about {
+    
+    background-image: url('../pictures/Various/background6.jpg');
+    text-align: center;
+    margin-top:8px;
+    font-size: 25px;
+    font-family:Heebo-VariableFont_wght;
+}
+span{text-decoration:underline;}
+
+li{text-align:right;}
+
+.margin {
+    margin: 5vw;
+}
+@font-face {
+    font-family: 'Heebo-VariableFont_wght';
+    src: url('fonts/Heebo-VariableFont_wght.ttf') format('truetype');
+}

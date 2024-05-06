@@ -1,0 +1,36 @@
+﻿body {
+   
+}
+@font-face {
+    font-family: 'DanaYadAlefAlefAlef-Normal';
+    src: url('fonts/DanaYadAlefAlefAlef-Normal.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Heebo-VariableFont_wght';
+    src: url('fonts/Heebo-VariableFont_wght.ttf') format('truetype');
+}
+footer {
+    background-color: #eee3da;
+    width: 100%;
+    margin-top:8%;
+    padding:3%;
+}
+footer img {
+    height: 4vh;
+    width: 1.6vw;
+}
+footer > a{
+    text-align:right;
+}
+@media (max-width:900px) {
+    footer img {
+        height: 4vh;
+        width: 5vw;
+    }
+}
+@media (max-width: 600px) {
+    footer img {
+        height: 4vh;
+        width: 6vw;
+    }
+}

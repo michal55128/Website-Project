@@ -1,0 +1,181 @@
+﻿
+body {
+    direction: rtl;
+
+}
+footer > a {
+    text-align: right;
+}
+.grid img {   
+    z-index: -1;
+    width: 390px;
+    height: 370px;
+    padding: 10px;
+}
+/*טשטוש התמונה בעת מעבר עליה*/
+.grid div:hover img{
+    opacity:0.7;
+}
+/*חלוקת דף המוצר ל4 עמודות*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-items: center;
+}
+.grid div{
+    margin:20px;
+}
+div > p {
+    text-align: center;
+   font-family:Heebo;
+    font-size: 23px;
+    margin:7px;
+}
+div{
+    display:flex;
+    flex-direction:column;
+   align-self:center;
+}
+footer >div{
+    display:block;
+}
+p:nth-child(2){
+    font-family: 'Dana Yad AlefAlefAlef';
+}
+/*דף הקופץ בצד הדף בעת לחיצה על כפתור הוספה לסל*/
+.sidebar {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f8e7df;
+    overflow-x: hidden;
+    transition: 0.5s;
+    height: 25vh;
+    padding-top: 41px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+.openbtn {
+    width: 30%;
+    background-color: #b98381;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 6px 15px;
+    border: none;
+    align-self: center;
+    border-radius: 20px;
+    border-block-color: #f2e2d2;
+    border-color: dimgray;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+        height:40vh;
+    }
+        .sidebar a {
+            font-size: 20px;
+        }
+}
+a{
+    /*text-align:center;*/
+    text-decoration:none;
+    color:white;
+    font-family:Heebo;
+    font-size:20px;
+}
+h1 {
+    font-size: 40PX;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    font-family: Heebo;
+    position: sticky;
+    top:0px;
+}
+input{
+    width:20%;
+}
+/*בעת לחיצה על הכפתור הכפתור קופץ מעלה*/
+button:active{
+  transform: translateY(4px);
+}
+/* On smaller screens, where width is less than 600px, change the columns to3 */
+@media (max-width: 1300px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        justify-items: center;
+    }
+        .grid img {
+            width: 300px;
+            height: 280px;
+        }
+    .openbtn {
+        font-size: 16px;
+        width: 45%;
+    }
+
+    h1 {
+        font-size: 30PX;
+    }
+
+    @media (max-width: 850px)
+{
+     .grid{ grid-template-columns: repeat(2,1fr);}
+        .grid img {
+            width: 300px;
+            height: 280px;
+        }
+    }
+    /* On smaller screens, where width is less than 600px, change the columns to 2 */
+    @media (max-width: 600px) {
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            justify-items: center;
+        }
+            .grid img {
+                width: 200px;
+                height: 180px;
+            }
+       .openbtn {
+            font-size: 12px;
+            width: 50%;
+        }
+        h1 {
+            font-size: 20PX;
+        }
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

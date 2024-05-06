@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="../css/general.css" rel="stylesheet" />
+    <link href="../css/product.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <h1>שטיחים לחדרי ילדים</h1>
+    <div class="grid">
+        <div><img alt="שטיח חיות" src="../pictures/שטיחים/image_487_2021-04-04_19-38-43.jpg" /><p>שטיח חיות</p><p>₪250</p><button type="submit" class="openbtn" onclick="openNav()"> הוסף לסל</button></div>
+        <div><img alt="שטיח מרובע שחור לבן" src="../pictures/שטיחים/image_488_2021-04-04_19-35-25.jpg" /><p>שטיח מרובע שחור לבן</p><p>₪250</p><button type="submit" class="openbtn" onclick="openNav()"> הוסף לסל</button></div>
+        <div><img alt="שטיח פרחים" src="../pictures/שטיחים/product17057_image1_2020-05-22_05-52-41.jpg" /><p>שטיח פרחים</p><p>₪220</p><button type="submit" class="openbtn" onclick="openNav()"> הוסף לסל</button></div>
+        <div><img alt="שטיח כוכב" src="../pictures/שטיחים/product26307_image1_2020-05-22_05-54-58.jpg" /><p>שטיח כוכב</p><p>₪230</p><button type="submit" class="openbtn" onclick="openNav()"> הוסף לסל</button></div>
+        <div> <img alt="שטיח נעלי בלט" src="../pictures/שטיחים/product26694_image1_2020-05-22_05-55-04.jpg" /><p>שטיח נעלי בלט</p><p>₪230</p><button type="submit" class="openbtn" onclick="openNav()"> הוסף לסל</button></div>
+        <div><img alt="שטיח עוגן" src="../pictures/שטיחים/product28232_image1_2020-05-22_05-56-15.jpg" /><p>שטיח עוגן</p><p>₪230</p><button type="submit" class="openbtn" onclick="openNav()"> הוסף לסל</button></div>
+        <div><img alt="שטיח כיתוב מוזהב" src="../pictures/שטיחים/product29262_image1_2020-05-22_05-56-29.jpg" /><p>שטיח כיתוב מוזהב</p><p>₪230</p><button type="submit" class="openbtn" onclick="openNav()"> הוסף לסל</button></div>
+        <div> <img alt="שטיח קשת" src="../pictures/שטיחים/product32800_image1_2021-01-21_13-54-37.jpg" /><p>שטיח קשת</p><p>₪230</p><button type="submit" class="openbtn" onclick="openNav()"> הוסף לסל</button></div>
+        <div> <img alt="שטיח חד קרן" src="../pictures/שטיחים/product32801_image1_2021-01-21_14-49-47.jpg" /><p>שטיח חד קרן</p><p>₪240</p><button type="submit" class="openbtn" onclick="openNav()"> הוסף לסל</button></div>
+        <div><img alt="שטיח מנומר" src="../pictures/שטיחים/product32803_image1_2021-01-21_15-10-00.jpg" /><p>שטיח מנומר</p><p>₪240</p><button type="submit" class="openbtn" onclick="openNav()"> הוסף לסל</button></div>
+        <div><img alt="שטיח לבן" src="../pictures/שטיחים/product32999_image1_2021-07-29_17-33-11.jpg" /><p>שטיח לבן</p><p>₪240</p><button type="submit" class="openbtn" onclick="openNav()"> הוסף לסל</button></div>
+        <div> <img alt="שטיח צורות" src="../pictures/שטיחים/product33327_image1_2022-07-26_18-32-18.jpg" /><p>שטיח צורות</p><p>₪250</p><button type="submit" class="openbtn" onclick="openNav()"> הוסף לסל</button></div>
+        <div><img alt="שטיח עיגולים" src="../pictures/שטיחים/product33267_image1_2022-06-30_12-39-39.jpg" /><p>שטיח עיגולים</p><p>₪260</p><button type="submit" class="openbtn" onclick="openNav()"> הוסף לסל</button></div>
+        <div><img alt="שטיח עלים" src="../pictures/שטיחים/product33251_image1_2022-05-01_11-31-58.jpg" /><p>שטיח עלים</p><p>₪260</p><button type="submit" class="openbtn" onclick="openNav()"> הוסף לסל</button></div>
+    </div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <p>פריט נוסף בהצלחה:)</p>
+        <p>בחר כמות:<input type="number" name="sumOfproduct" min="1" id="sum" /></p>
+        <a href="../pages/payment.html" target="iframe1">לתשלום</a>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("sum").value = 1
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "1";
+        }
+    </script>
+    <footer>
+        <p>
+            טלפון: 03-9446667
+        </p>
+
+        <p>כתובת: יונה וולך 15, ראש העין</p>
+        <div id="business_info">
+            <a id="business_phone" href="tel:03-9446667">
+                <img src="../pictures/business/business_phone.png" alt="phone">
+            </a><a id="business_whatsapp" href="https://api.whatsapp.com/send?phone=972505444001" target="_blank">
+                <img src="../pictures/business/business_whatsapp.png" alt="whatsapp">
+            </a>
+            <a id="business_address" href="https://www.waze.com/he/livemap/directions?latlng=32.0876898%2C34.9784955" target="_blank">
+                <img src="../pictures/business/business_address.png" alt="address">
+            </a>
+        </div>
+
+
+    </footer>
+</body>
+</html>

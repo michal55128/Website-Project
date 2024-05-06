@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="../css/product.css" rel="stylesheet" />
+    <link href="../css/general.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <h1>מדבקות קיר חדרי ילדים</h1>
+    <div class="grid">
+        <div>
+            <img src="../pictures/kidsroom/2.jpg" />
+            <p>מדבקות חלליות וכוכבים</p><p>₪70</p><button class="openbtn" onclick="openNav()"> הוספה לסל</button>
+        </div>
+        <div>
+            <img src="../pictures/kidsroom/product32959_image1_2021-07-20_16-24-29.jpg" />
+            <p>מדבקות אננס</p><p>₪70</p><button class="openbtn" onclick="openNav()"> הוספה לסל</button>
+        </div>
+        <div>
+            <img src="../pictures/kidsroom/product33006_image1_2021-08-03_13-08-36.jpg" />
+            <p>מדבקות בלונים </p><p>₪70</p><button class="openbtn" onclick="openNav()"> הוספה לסל</button>
+        </div>
+        <div>
+
+            <img src="../pictures/kidsroom/product33008_image1_2021-08-04_11-29-49.jpg" />
+            <p>מדבקות פרחים </p><p>₪70</p><button class="openbtn" onclick="openNav()"> הוספה לסל</button>
+        </div>
+        <div class="change-height">
+            <img src="../pictures/kidsroom/product33011_image1_2021-08-04_11-59-39.jpg" />
+            <p>מדבקות כיתוב יצירות </p><p>₪70</p><button class="openbtn" onclick="openNav()"> הוספה לסל</button>
+        </div>
+        <div>
+            <img src="../pictures/kidsroom/product33014_image1_2021-08-04_12-23-30.jpg" />
+            <p>מדבקות שמות בנות</p><p>₪70</p><button class="openbtn" onclick="openNav()"> הוספה לסל</button>
+        </div>
+        <div>
+
+            <img src="../pictures/kidsroom/product33015_image1_2021-08-04_13-05-01.jpg" />
+            <p>מדבקות שמות בנים</p><p>₪70</p><button class="openbtn" onclick="openNav()"> הוספה לסל</button>
+        </div>
+        <div class="change-h">
+
+            <img src="../pictures/kidsroom/product33037_image1_2021-08-22_10-22-24.jpg" />
+            <p>מדבקות קשתות</p><p>₪70</p><button class="openbtn" onclick="openNav()"> הוספה לסל</button>
+        </div>
+        <div class="change-h">
+            <img src="../pictures/kidsroom/product33126_image1_2021-12-09_14-27-39.jpg" />
+            <p>מדבקות כיתובים </p><p>₪70</p><button class="openbtn" onclick="openNav()"> הוספה לסל</button>
+        </div>
+        <div>
+            <img src="../pictures/kidsroom/product33173_image1_2022-02-21_15-15-26.jpg" />
+            <p>מדבקות משחק נטען</p><p>₪70</p><button class="openbtn" onclick="openNav()"> הוספה לסל</button>
+        </div>
+        <div>
+            <img src="../pictures/טפטים חדרי ילדים/product32873_image1_2022-08-11_16-01-48 (1).jpg" />
+            <p>מדבקות חיות</p><p>₪250</p><button class="openbtn" onclick="openNav()"> הוספה לסל</button>
+        </div>
+        <div>
+
+            <img src="../pictures/טפטים חדרי ילדים/product33009_image1_2021-08-04_11-38-51.jpg" />
+            <p>מדבקת קשת</p><p>₪70</p><button class="openbtn" onclick="openNav()"> הוספה לסל</button>
+        </div>
+        <div>
+            <img src="../pictures/טפטים חדרי ילדים/product33010_image1_2021-08-04_11-50-03.jpg" />
+            <p>מדבקות חלל</p><p>₪70</p><button class="openbtn" onclick="openNav()"> הוספה לסל</button>
+        </div>
+    </div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <p>פריט נוסף בהצלחה:)</p>
+        <p>בחר כמות:<input type="number" name="sumOfproduct" min="1" id="sum" /></p>
+        <a href="../pages/payment.html" target="iframe1">לתשלום</a>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("sum").value = 0
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+        }
+    </script>
+    <footer>
+        <p>
+            טלפון: 03-9446667
+        </p>
+
+        <p>כתובת: יונה וולך 15, ראש העין</p>
+        <div id="business_info">
+            <a id="business_phone" href="tel:03-9446667">
+                <img src="../pictures/business/business_phone.png" alt="phone">
+            </a><a id="business_whatsapp" href="https://api.whatsapp.com/send?phone=972505444001" target="_blank">
+                <img src="../pictures/business/business_whatsapp.png" alt="whatsapp">
+            </a>
+            <a id="business_address" href="https://www.waze.com/he/livemap/directions?latlng=32.0876898%2C34.9784955" target="_blank">
+                <img src="../pictures/business/business_address.png" alt="address">
+            </a>
+        </div>
+
+
+    </footer>
+</body>
+</html>

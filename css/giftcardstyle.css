@@ -1,0 +1,61 @@
+﻿body {
+    direction: rtl;
+    background-color: #ffffff;
+}
+
+.flex {
+    display: flex;
+}
+
+img {
+    width: 600px;
+    height: 600px;
+}
+
+.details {
+    margin-left: 20%;
+    margin-right: 12%;
+}
+
+input {
+    border-color: dimgray;
+    padding: 1.5em;
+    margin: 0.5em;
+    border-radius: 50px;
+    border-block-color: #f2e2d2;
+}
+/*/*הגדרת הפלקס של כל form*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+/*עיצוב ה-textarea*/
+textarea {
+    border-color: dimgray;
+    padding: 1.5em;
+    margin: 0.5em;
+    border-radius: 50px;
+    border-width: medium;
+}
+
+label {
+    color: #139a94;
+    font-family: Heebo,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+/*במסכים הקטנים מ1100 העמוד ממוקם בצורת עמודה */
+@media (max-width: 1100px) {
+    .flex {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    img {
+        display: block;
+        width: 400px;
+        height: 400px;
+    }
+}
